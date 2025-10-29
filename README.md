@@ -1,25 +1,5 @@
 # Projet : API FastAPI + Frontend React (Docker / Docker Compose)
 
-## Objectif
-
-Déployer un modèle IA (Iris – RandomForest) via une **API FastAPI** et un **Frontend React**, chacun dans un conteneur séparé, orchestrés avec **Docker Compose**.
-
----
-
-## Fonctionnement attendu
-
-1. Le modèle (`model.joblib` et `model_metadata.json`) est placé dans `api/app/model/`.
-2. L’API charge le modèle et expose :
-
-   * `GET /health` → état du modèle
-   * `POST /predict` → renvoie la classe prédite et les probabilités
-3. Le Frontend envoie les données (sepal/petal) et affiche la prédiction.
-4. L’ensemble est lancé avec :
-
-   ```bash
-   docker compose up --build
-   ```
-
 ---
 
 ## Étapes de création des fichiers
